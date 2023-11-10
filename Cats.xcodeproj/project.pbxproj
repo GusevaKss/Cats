@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F96055472AFA149100249CD7 /* ImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96055462AFA149100249CD7 /* ImageDTO.swift */; };
 		F9963F552AF0386700CBD200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9963F542AF0386700CBD200 /* AppDelegate.swift */; };
 		F9963F572AF0386700CBD200 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9963F562AF0386700CBD200 /* SceneDelegate.swift */; };
 		F9963F592AF0386700CBD200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9963F582AF0386700CBD200 /* ViewController.swift */; };
 		F9963F5E2AF0386800CBD200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9963F5D2AF0386800CBD200 /* Assets.xcassets */; };
 		F9963F6A2AF03B0400CBD200 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F9963F692AF03B0400CBD200 /* Kingfisher */; };
 		F9963F6D2AF03B8600CBD200 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9963F6C2AF03B8600CBD200 /* SnapKit */; };
+		F9C742C42AFC14C000DFA4C8 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C742C32AFC14C000DFA4C8 /* Worker.swift */; };
 		F9E7A5242AF1727900EA6679 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E7A5232AF1727900EA6679 /* CatImage.swift */; };
+		F9E7A5272AF174FF00EA6679 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E7A5262AF174FF00EA6679 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F96055462AFA149100249CD7 /* ImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDTO.swift; sourceTree = "<group>"; };
 		F9963F512AF0386700CBD200 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9963F542AF0386700CBD200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9963F562AF0386700CBD200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F9963F582AF0386700CBD200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9963F5D2AF0386800CBD200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9963F622AF0386800CBD200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C742C32AFC14C000DFA4C8 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		F9E7A5232AF1727900EA6679 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
+		F9E7A5262AF174FF00EA6679 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,9 @@
 		F9963F532AF0386700CBD200 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
-				F9E7A5222AF171BD00EA6679 /* models */,
-				F9E7A5212AF1718000EA6679 /* view */,
+				F9E7A5252AF174AD00EA6679 /* Network */,
+				F9E7A5222AF171BD00EA6679 /* Models */,
+				F9E7A5212AF1718000EA6679 /* View */,
 				F9963F542AF0386700CBD200 /* AppDelegate.swift */,
 				F9963F562AF0386700CBD200 /* SceneDelegate.swift */,
 				F9963F5D2AF0386800CBD200 /* Assets.xcassets */,
@@ -76,20 +83,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F9E7A5212AF1718000EA6679 /* view */ = {
+		F9E7A5212AF1718000EA6679 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				F9963F582AF0386700CBD200 /* ViewController.swift */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
-		F9E7A5222AF171BD00EA6679 /* models */ = {
+		F9E7A5222AF171BD00EA6679 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F9E7A5232AF1727900EA6679 /* CatImage.swift */,
 			);
-			path = models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9E7A5252AF174AD00EA6679 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F9E7A5262AF174FF00EA6679 /* Network.swift */,
+				F96055462AFA149100249CD7 /* ImageDTO.swift */,
+				F9C742C32AFC14C000DFA4C8 /* Worker.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +119,7 @@
 				F9963F4D2AF0386700CBD200 /* Sources */,
 				F9963F4E2AF0386700CBD200 /* Frameworks */,
 				F9963F4F2AF0386700CBD200 /* Resources */,
+				F99D37172AF5504C003BC9B2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -165,15 +183,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F99D37172AF5504C003BC9B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint \nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9963F4D2AF0386700CBD200 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E7A5272AF174FF00EA6679 /* Network.swift in Sources */,
+				F96055472AFA149100249CD7 /* ImageDTO.swift in Sources */,
 				F9E7A5242AF1727900EA6679 /* CatImage.swift in Sources */,
 				F9963F592AF0386700CBD200 /* ViewController.swift in Sources */,
 				F9963F552AF0386700CBD200 /* AppDelegate.swift in Sources */,
 				F9963F572AF0386700CBD200 /* SceneDelegate.swift in Sources */,
+				F9C742C42AFC14C000DFA4C8 /* Worker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z2F2CJTU2L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z2F2CJTU2L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
